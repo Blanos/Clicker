@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:id="@+id/row"
+    >
+
+    <Button
+        android:id="@+id/TrainTroopButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:text="@string/TrainTroopButtonText" />
+
+    <TextView
+        android:text="@string/TroopLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopLevelT"
+        android:layout_toRightOf="@id/TrainTroopButton"
+        android:layout_toEndOf="@id/TrainTroopButton"/>
+
+    <TextView
+        android:text="@string/TroopLevelNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopLevelN"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:text="@string/TroopDamageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopDamageT"
+        android:layout_below="@+id/TroopLevelT"
+        android:layout_toRightOf="@id/TrainTroopButton"
+        android:layout_toEndOf="@id/TrainTroopButton"/>
+
+    <TextView
+        android:text="@string/TroopDamageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopDamageN"
+        android:layout_below="@+id/TroopLevelT"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:text="@string/TrainCostText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopLevelUpCostT"
+        android:layout_below="@+id/TroopDamageT"
+        android:layout_toRightOf="@id/TrainTroopButton"
+        android:layout_toEndOf="@id/TrainTroopButton"/>
+
+    <TextView
+        android:text="@string/TrainCostNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopLevelUpCostN"
+        android:layout_below="@+id/TroopDamageT"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

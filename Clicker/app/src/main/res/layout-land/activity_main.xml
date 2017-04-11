@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.clicker.Main"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imageDescriptionAtMain"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EnemyImage"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:layout_below="@+id/EnemyLevelText"
+        android:layout_above="@+id/GoldText"
+        android:layout_toEndOf="@+id/HeroButton"
+        android:layout_toRightOf="@+id/HeroButton"
+        android:layout_toStartOf="@+id/fragment_container"
+        android:layout_toLeftOf="@+id/fragment_container"
+        android:src="@drawable/foe1"
+        android:contentDescription="@string/imageDescriptionAtMain"
+        android:clickable="true"
+        android:onClick="tapEnemy" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HeroButton"
+        android:text="@string/HeroButtonText"
+        android:layout_below="@+id/EnemyLevelText"
+        android:onClick="toHero" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TroopsButton"
+        android:text="@string/TroopsButtonText"
+        android:layout_below="@+id/HeroButton"
+        android:onClick="toTroops" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MenuButton"
+        android:text="@string/MenuButtonText"
+        android:layout_below="@+id/TroopsButton"
+        android:onClick="toMenu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnemyLevelText"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EnemyLevelText"
+        android:gravity="end"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@+id/HeroButton"
+        android:layout_toRightOf="@+id/HeroButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnemyLevelNumber"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EnemyLevelNumber"
+        android:gravity="start"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@+id/EnemyLevelText"
+        android:layout_toRightOf="@+id/EnemyLevelText"
+        android:layout_toStartOf="@+id/fragment_container"
+        android:layout_toLeftOf="@+id/fragment_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnemyHpText"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EnemyHpText"
+        android:gravity="end"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@+id/HeroButton"
+        android:layout_toRightOf="@+id/HeroButton"
+        android:layout_below="@+id/EnemyLevelText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnemyHpNumber"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EnemyHpNumber"
+        android:gravity="start"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@+id/EnemyLevelText"
+        android:layout_toRightOf="@+id/EnemyLevelText"
+        android:layout_toStartOf="@+id/fragment_container"
+        android:layout_toLeftOf="@+id/fragment_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/EnemyLevelText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GoldText"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/GoldText"
+        android:gravity="end"
+        android:textColor="@color/textColor"
+        android:layout_toStartOf="@+id/fragment_container"
+        android:layout_toLeftOf="@+id/fragment_container"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GoldNumber"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/GoldNumber"
+        android:gravity="end"
+        android:textColor="@color/textColor"
+        android:layout_toStartOf="@+id/GoldText"
+        android:layout_toLeftOf="@+id/GoldText"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fragment_container"
+        >
+
+    </FrameLayout>
+
+
+</RelativeLayout>

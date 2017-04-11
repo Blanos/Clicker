@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Clicker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="GameNameText">Clicker</string>
+    <string name="StartButtonText">Start</string>
+    <string name="SettingsButtonText">Settings</string>
+    <string name="ClearDataButtonText">Clear data</string>
+    <string name="HeroButtonText">Hero</string>
+    <string name="TroopsButtonText">Troops</string>
+    <string name="CastleButtonText">Castle</string>
+    <string name="MapButtonText">Map</string>
+    <string name="MenuButtonText">Menu</string>
+    <string name="EnemyLevelText">Level  </string>
+    <string name="HeroNameText">Hero name</string>
+    <string name="HeroExpText">Exp</string>
+    <string name="HeroExpNumber">0</string>
+    <string name="HeroLevelText">Level</string>
+    <string name="HeroLevelNumber">0</string>
+    <string name="HeroDamageText">Damage</string>
+    <string name="HeroDamageNumber">1</string>
+    <string name="imageDescriptionAtMain">backgroundImage</string>
+    <string name="TrainTroopButtonText">Up</string>
+    <string name="TrainCostText">Train cost</string>
+    <string name="TroopDamageText">Damage</string>
+    <string name="TroopLevelText">Level</string>
+    <string name="TroopNameText">Name</string>
+    <string name="TroopLevelNumber">0</string>
+    <string name="TrainCostNumber">0</string>
+    <string name="TroopDamageNumber">0</string>
+    <string name="HireTroopButtonText">Hire new troop</string>
+    <string name="HeroNextExpNumber">0</string>
+    <string name="BetweenExpText">/</string>
+    <string name="EnemyLevelNumber">0</string>
+    <string name="EnemyHpText">Hp:</string>
+    <string name="EnemyHpNumber">0</string>
+    <string name="GoldText">Gold</string>
+    <string name="GoldNumber">0</string>
+    <string name="clearWarning">Do you want to clear all data? It will delete all progress.</string>
+    <string name="clearDataYesButtonText">Yes</string>
+    <string name="clearDataNoButtonText">No</string>
+    <string name="rewardTopText">While you were resting your army earn for you</string>
+    <string name="rewardBottomText">gold pieces</string>
+
+</resources>
